@@ -55,6 +55,11 @@ html {
   color: black;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   padding: 0.5rem;
@@ -446,6 +451,8 @@ a {
     column-gap: 3rem;
   }
 
+  /* discription */
+
   .discription {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -514,6 +521,8 @@ a {
     width: 20%;
   }
 
+  /* discription */
+
   .discription {
     column-gap: 3rem;
     grid-template-columns: 1.7fr 1fr;
@@ -573,6 +582,8 @@ a {
   .search__input--check {
     width: 40%;
   }
+
+  /* disciption */
 
   .discription__extra ul {
     column-gap: 1rem;
