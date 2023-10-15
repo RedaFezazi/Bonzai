@@ -17,15 +17,15 @@
 
     <nav class="nav container">
       <ul class="nav__list">
-        <li><img src="/assets/logo.png" alt="" class="nav__img" /></li>
+        <li><img src="./assets/logo.png" alt="" class="nav__img" /></li>
         <li class="nav__item">
-          <a class="nav__link btn" href="/index.html">BONZAI BEACH HOTEL</a>
+          <a class="nav__link btn" href="./index.html">BONZAI BEACH HOTEL</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/index.html">Home</a>
+          <a class="nav__link" href="./index.html">Home</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/rooms.html">Rooms</a>
+          <a class="nav__link" href="./rooms.html">Rooms</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
       <section class="header__section">
         <h1 id="headerHeading" class="header__title">javascript</h1>
         <hr class="header__line" />
-        <a class="header__link btn" href="/rooms.html">Back To Rooms</a>
+        <a class="header__link btn" href="./rooms.html">Back To Rooms</a>
       </section>
     </header>
 
@@ -44,10 +44,10 @@
 
     <section class="discription container">
       <aside class="discription__album">
-        <figure><img src="/assets/kitchen.jpg" alt="Kitchen" /></figure>
-        <figure><img src="/assets/bathroom.jpg" alt="Bathroom" /></figure>
+        <figure><img src="./assets/kitchen.jpg" alt="Kitchen" /></figure>
+        <figure><img src="./assets/bathroom.jpg" alt="Bathroom" /></figure>
         <figure>
-          <img src="/assets/livingroom.avif" alt="Living Room" />
+          <img src="./assets/livingroom.avif" alt="Living Room" />
         </figure>
       </aside>
       <article class="discription__details">
@@ -103,7 +103,7 @@
         document.getElementById("headerHeading").innerText = headerHeading;
         document.getElementById(
           "header"
-        ).style.backgroundImage = `url("${headerImg}")`;
+        ).style.backgroundImage = `url(".${headerImg}")`;
         document.getElementById("price").innerText = `Price: ${price}`;
       }
     </script>
