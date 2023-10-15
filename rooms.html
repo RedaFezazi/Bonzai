@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Room</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <nav class="nav container">
+      <ul class="nav__list">
+        <li><img src="/assets/logo.png" alt="" class="nav__img" /></li>
+        <li class="nav__item">
+          <a class="nav__link btn" href="/index.html">BONZAI BEACH HOTEL</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="">Rooms</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header with a background image -->
+
+    <header class="header container header--rooms">
+      <section class="header__section">
+        <h1 class="header__title">Luxurious Rooms</h1>
+        <hr class="header__line" />
+        <a class="header__link btn" href="/index.html">Return Home</a>
+      </section>
+    </header>
+
+    <!-- Search Bar -->
+
+    <section class="search container">
+      <h2 class="search__title title">Search Rooms</h2>
+
+      <fieldset class="search__fieldset search__Fieldset--roomType">
+        <legend class="search__legend">Room Type</legend>
+        <select class="search__select" name="roomType" id="roomType">
+          <option value="">All</option>
+          <option value="">Suite</option>
+          <option value="">Presidential suite</option>
+          <option value="">Executive suite</option>
+          <option value="">Deluxe Hotel rooms</option>
+          <option value="">Bridal Suite</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="search__fieldset search__Fieldset--guests">
+        <legend class="search__legend">Guests</legend>
+        <select class="search__select" name="guests" id="guests">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="search__fieldset search__Fieldset--range">
+        <legend class="search__legend">Room Price</legend>
+        <input
+          class="search__input--range"
+          type="range"
+          name="roomPrice"
+          id="roomPrice"
+        />
+      </fieldset>
+
+      <fieldset class="search__fieldset search__Fieldset--roomSize">
+        <legend class="search__legend">Room Size</legend>
+        <input class="search__input--field" id="roomSizeMin" placeholder="0" />
+        <input
+          class="search__input--field"
+          id="roomSizeMax"
+          placeholder="1000"
+        />
+      </fieldset>
+
+      <fieldset class="search__fieldset search__Fieldset--extra">
+        <label class="search__label" for="breakfast">Breakfast</label>
+        <input
+          class="search__input--check"
+          type="checkbox"
+          name="breakfast"
+          id="breakfast"
+        />
+        <label class="search__label" for="pets">Pets</label>
+        <input
+          class="search__input--check"
+          type="checkbox"
+          name="pets"
+          id="pets"
+        />
+      </fieldset>
+    </section>
+
+    <!-- Room exemples -->
+
+    <section class="rooms container">
+      <a
+        class="rooms__link"
+        href="/room.html?headerImg=/assets/presidential%20(1).webp&headerHeading=Presidential%20Room&price=600$"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/presidential (1).webp" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Presidential Room</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">600$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure></a
+      >
+
+      <a
+        class="rooms__link"
+        href="/room.html?headerImg=/assets/family.webp&headerHeading=Family%20Deluxe&price=500$"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/family.webp" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Family Deluxe</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">500$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure></a
+      >
+      <a
+        class="rooms__link"
+        href="/room.html?headerImg=/assets/deluxe.webp&headerHeading=Double%20Deluxe&price=400$"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/deluxe.webp" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Double Deluxe</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">400$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure></a
+      >
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/01-day.jpg&headerHeading=&price=700$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/01-day.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Suite</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">700$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/02-night.jpg&headerHeading=Bridal%20Suite&price=650$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/02-night.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Bridal Suite</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">650$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/03-day.jpg&headerHeading=Family%20Deluxe&price=500$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/03-day.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Family Deluxe</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">500$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/04-night.jpg&headerHeading=Bridal%20Suite&price=700$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/04-night.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Bridal Suite</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">700$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/05-day.jpg&headerHeading=Deluxe%20Room&price=800$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/05-day.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Deluxe Room</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">800$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/06-night.jpg&headerHeading=Family%20Deluxe&price=600$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/06-night.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Family Deluxe</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">600$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/07-day.jpg&headerHeading=Deluxe%20Room&price=900$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/07-day.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Deluxe Room</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">900$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a
+        class="rooms__link"
+        href="room.html?headerImg=/assets/08-night.jpg&headerHeading=Suite&price=1000$"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <figure class="rooms__figure">
+          <img class="rooms__img" src="/assets/08-night.jpg" alt="" />
+          <figcaption class="rooms__figcaption">
+            <h4 class="rooms__subtitle">Suite</h4>
+            <aside class="rooms__aside">
+              <p class="rooms__paragraph">1000$<br /><span>per night</span></p>
+            </aside>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+  </body>
+</html>

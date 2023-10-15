@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Rooms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <nav class="nav container">
+      <ul class="nav__list">
+        <li><img src="/assets/logo.png" alt="" class="nav__img" /></li>
+        <li class="nav__item">
+          <a class="nav__link btn" href="/index.html">BONZAI BEACH HOTEL</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/rooms.html">Rooms</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header with a background image -->
+
+    <header id="header" class="header container">
+      <section class="header__section">
+        <h1 id="headerHeading" class="header__title">javascript</h1>
+        <hr class="header__line" />
+        <a class="header__link btn" href="/rooms.html">Back To Rooms</a>
+      </section>
+    </header>
+
+    <!-- Room discription -->
+
+    <section class="discription container">
+      <aside class="discription__album">
+        <figure><img src="/assets/kitchen.jpg" alt="Kitchen" /></figure>
+        <figure><img src="/assets/bathroom.jpg" alt="Bathroom" /></figure>
+        <figure>
+          <img src="/assets/livingroom.avif" alt="Living Room" />
+        </figure>
+      </aside>
+      <article class="discription__details">
+        <h3 class="title">Details</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          vel esse excepturi consectetur odio repudiandae tempore facilis beatae
+          nihil eaque! Praesentium tempora, accusamus blanditiis libero
+          temporibus nesciunt in maiores corrupti labore aliquam ratione ut
+          animi asperiores mollitia quasi numquam iusto amet perferendis. Saepe
+          ipsa, labore maiores quibusdam id ullam iste voluptatum sint quo
+          dolore ad laboriosam nisi quisquam illo commodi. Voluptate cumque,
+          iusto fugiat nam necessitatibus officiis perferendis provident a
+          facilis? Perspiciatis molestiae facere explicabo cupiditate eum? Earum
+          porro explicabo sapiente hic eum natus! Id pariatur sit excepturi
+          deleniti, consequuntur labore corporis voluptatem fuga harum cumque,
+          maiores animi dolores suscipit!
+        </p>
+      </article>
+      <aside class="discription__info">
+        <h3 class="title">Info</h3>
+        <ul>
+          <li id="price">Price: $500</li>
+          <li>Size: 700 Kvm</li>
+          <li>Max Capacity: 6 People</li>
+          <li>Pets Allowed</li>
+          <li>Free Breakfast Included</li>
+        </ul>
+      </aside>
+      <aside class="discription__extra">
+        <h4 class="title">Extra</h4>
+        <ul>
+          <li>- Lorem ipsum, dolor sit adipisicing.</li>
+          <li>- Sit amet consectetur adipisicing elit. Minus!</li>
+          <li>- Lorem ipsum dolor sit amet.</li>
+          <li>- Lorem ipsum dolor sit amet consectetur.</li>
+          <li>- Lorem ipsum dolor sit adipisicing elit. .</li>
+          <li>- Ipsum dolor.</li>
+          <li>- Lorem ipsum dolor sit.</li>
+        </ul>
+      </aside>
+    </section>
+    <script>
+      // JavaScript code to extract and use the query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const headerHeading = urlParams.get("headerHeading");
+      const headerImg = urlParams.get("headerImg");
+      const price = urlParams.get("price");
+
+      if (headerHeading && headerImg) {
+        // Update the content based on the room's img
+
+        document.getElementById("headerHeading").innerText = headerHeading;
+        document.getElementById(
+          "header"
+        ).style.backgroundImage = `url("${headerImg}")`;
+        document.getElementById("price").innerText = `Price: ${price}`;
+      }
+    </script>
+  </body>
+</html>
